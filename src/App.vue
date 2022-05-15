@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MenuPrincipal></MenuPrincipal>
+   <HeaderPrincipal></HeaderPrincipal>
+
+   <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                   <CardProducto></CardProducto>
+                   
+                </div>
+            </div>
+        </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import MenuPrincipal from './components/MenuPrincipal.vue'
+import HeaderPrincipal from './components/HeaderPrincipal.vue'
+import CardProducto from './components/CardProducto.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuPrincipal,HeaderPrincipal,CardProducto
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
