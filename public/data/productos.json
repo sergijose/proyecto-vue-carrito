@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "laptop",
+    "price":1500,
+    "stock":5,
+    "image":"https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  
+  },
+  {
+    "id": 2,
+    "name": "celular",
+    "price":800,
+    "stock":5,
+    "image": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "id": 3,
+    "name": "disco duro",
+    "price":200,
+    "stock":5,
+    "image": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "id": 4,
+    "name": "audifono",
+    "price":50,
+    "stock":8,
+    "image": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {"id": 5,
+    "name": "teclado",
+    "price":50,
+    "stock":8,
+    "image": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {"id": 6,
+    "name": "guitarra electrica",
+    "price":50,
+    "stock":8,
+    "image": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  }
+ 
+]

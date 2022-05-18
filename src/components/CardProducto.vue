@@ -1,45 +1,67 @@
 <template>
-<div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
+  <div class="producto">
+    <div class="div-img">
+      <img class="card-img-top" :src="product.image" />
+      <h3>{{ product.name }}</h3>
+      <div class="precio">S/{{ product.price }}</div>
+      <span class="qty">disponibles {{ product.stock }}</span>
+    </div>
+    <button class="btn" @click="addItemToCart">
+      Agregar Al carrito
+    </button>
+    <div class="botones" >
+      <button class="btns" >+</button>
+      <button class="btns">hols</button>
+      <button class="btns" >-</button>
+    </div>
+
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'CardProducto',
+  name: "CardProducto",
+  props: {
+     contador: String,
+      product: Object,
 
-  data() {
-    return {
-      
-    };
+
   },
-
-  mounted() {
-    
-  },
-
   methods: {
-    
+    addItemToCart() {
+      this.$emit("addItemToCart", this.product.id);
+    },
+
+    computed:{
+
+
+    }
+
+
   },
 };
 </script>
 
 <style scoped>
-
+.btn {
+  background-color: #42b992;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 0.5em;
+}
+.botones {
+  display: flex;
+}
+.btns {
+  width: 50%;
+  color: #000;
+  background: white;
+}
+.producto {
+  background: white;
+  margin: 0 0.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
 </style>

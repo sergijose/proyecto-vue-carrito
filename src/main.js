@@ -4,8 +4,12 @@ import App from './App.vue'
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { vfmPlugin } from 'vue-final-modal'
+Vue.use(vfmPlugin)
 
-//fontawesome
+
+import ModalProduct from './components/ModalProduct.vue'
+Vue.component('ModalProduct', ModalProduct)
 
 
 Vue.config.productionTip = false
